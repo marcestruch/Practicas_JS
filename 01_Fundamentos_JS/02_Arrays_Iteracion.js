@@ -11,13 +11,7 @@ usuarios.forEach(usu => {
     
     //Verifica el estado del booleano activo para determinar el mensaje
     
-    let mensaje = "No tiene estado"
-    
-    if(usu.activo){
-        mensaje = "Activo";
-    }else{ //Si no tiene activo ni en false tambien ejecuta esto
-        mensaje = "Inactivo";
-    }
+   let mensaje = usu.activo ? "Activo" : "Inactivo";
 
     //Muestra mensaje por consola de cada usuario del array
 

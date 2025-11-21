@@ -36,3 +36,29 @@ const nombreMayus = nombresCompletos.map(nom => {
 //Muestra todas las posiciones del array de copia nombreMayus
 
 console.log(nombreMayus);
+
+const usuariosActivos = usuarios.filter(usuario => {
+
+    //Devuelve los usuarios activos
+  
+   return usuario.activo; 
+
+});
+
+//Array con usuarios
+
+console.log(usuariosActivos);
+
+//Con reduce se puede coger en este ejemplo el array usuarios para sumar dando una funcion y valor inicial 0 a acumulador
+
+const sumaEdades = usuarios.reduce(function(acumulador,valorActual){
+    
+    //acumulador = 0 la primera vez y se va sumando a esa variable la edad del usuarioActual recorrido
+    
+    return acumulador + valorActual.edad;
+
+},0)
+
+//Resultado de la suma de las edades de todos los usuarios del array usuarios
+
+console.log(sumaEdades);

@@ -44,3 +44,16 @@ Este módulo se centra en repasar y practicar los pilares fundamentales del leng
 - Se transformó el array de nombres a mayúsculas usando `map()`.
 - Se filtraron los usuarios activos usando `filter()`, resultando en 2 objetos.
 - Se calculó la suma total de las edades (87) usando `reduce()`.
+
+## 💻 1.3. Funciones: Ámbito (Scope), Parámetros y Elevación (Hoisting)
+
+**Objetivo:** Practicar la sintaxis de funciones (declarativas y flecha), la definición de parámetros por defecto y, crucialmente, comprender los conceptos de **Ámbito (Scope)** y **Elevación (Hoisting)**, que dictan la accesibilidad y el orden de ejecución del código.
+
+| Concepto | Descripción | Palabras Clave Comunes |
+| :--- | :--- | :--- |
+| **Ámbito de Función** | Define las variables accesibles dentro de una función. Las variables declaradas con `var` dentro de una función son locales y no visibles externamente. | `var` (ámbito de función), `global`, `local` |
+| **Parámetros por Defecto** | Asigna un valor predefinido a un parámetro si este se omite en la llamada a la función. | `function`, `=>` (función flecha) |
+| **Elevación** | Comportamiento donde las declaraciones de funciones y variables son movidas lógicamente a la parte superior de su ámbito antes de la ejecución. | `function` (declaración), `const/let` (expresión) |
+
+### Archivo de la Actividad
+- `03_Funciones_y_Scope.js`: Contiene las implementaciones para demostrar la accesibilidad de variables globales/locales, la sintaxis moderna de funciones con parámetros por defecto, y el comportamiento de elevación.

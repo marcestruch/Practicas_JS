@@ -1,7 +1,9 @@
-/* IIFE.js */
+ export{
+    hacerLineaH,
+    hacerLineasV
+ };
 
-const miLib = (function(){
-    const raya = "-";
+ const raya = "-";
     const punto = ".";
     const barra = "|";
 
@@ -16,10 +18,3 @@ const miLib = (function(){
     function hacerLineasV(espaciado=0, char=barra){
         console.log(`${char}${nVeces(espaciado, " ")}${char}`);
     }
-
-    return {
-        hacerLineaH,
-        hacerLineasV
-    };
-
-})();
